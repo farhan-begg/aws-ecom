@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"mybookstoredf28dabf": {
+		"mybooks6ac6974e": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": [],
@@ -8,7 +8,7 @@
 		}
 	},
 	"storage": {
-		"BookImages": {
+		"bookImages": {
 			"service": "S3",
 			"providerPlugin": "awscloudformation"
 		}
@@ -25,6 +25,31 @@
 			"providerPlugin": "awscloudformation",
 			"service": "Lambda",
 			"dependsOn": []
+		}
+	},
+	"api": {
+		"mybooks": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [
+						{
+							"authenticationType": "API_KEY",
+							"apiKeyConfig": {
+								"description": "guest user access to books",
+								"apiKeyExpirationDays": 365
+							}
+						}
+					],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authmybooks6ac6974e"
+						}
+					}
+				}
+			}
 		}
 	}
 }
