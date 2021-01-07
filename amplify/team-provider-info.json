@@ -1,0 +1,20 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-mybookstore-prod-201834-authRole",
+            "UnauthRoleArn": "arn:aws:iam::806120177134:role/amplify-mybookstore-prod-201834-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::806120177134:role/amplify-mybookstore-prod-201834-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-mybookstore-prod-201834-deployment",
+            "UnauthRoleName": "amplify-mybookstore-prod-201834-unauthRole",
+            "StackName": "amplify-mybookstore-prod-201834",
+            "StackId": "arn:aws:cloudformation:us-west-2:806120177134:stack/amplify-mybookstore-prod-201834/6a41a040-509f-11eb-bb03-021710aaff3d",
+            "AmplifyAppId": "d271o57nrn5z6h"
+        },
+        "categories": {
+            "auth": {
+                "mybookstoredf28dabf": {}
+            }
+        }
+    }
+}
