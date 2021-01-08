@@ -1,0 +1,36 @@
+
+/* Nav Section */
+
+.main-head {
+    width: 100%;
+    align-items: center;
+    position: absolute;
+
+  }
+  
+
+  nav { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+  }
+  
+  nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  
+  }
+
+  a {
+      color: black;
+  }
+
+  h1{
+      font-size: 24px;
+  }
