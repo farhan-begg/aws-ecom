@@ -14,6 +14,7 @@ import Admin from './pages/Admin';
 
 // Components
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 // Amplify Configurations
 import awsExports from "./aws-exports";
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <Router>
       <Header />
+
       <Switch>
         <Route exact path="/">
           <Home />
@@ -47,6 +49,7 @@ const App = () => {
         <Route path="*">
           <Error />
         </Route>
+
       </Switch>
     </Router>
   );
